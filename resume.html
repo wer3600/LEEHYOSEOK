@@ -5,42 +5,73 @@
 	<meta charset="utf-8">
 	<title></title>
 	<style>
-	div.container{
-		width: 800px;
-		margin-left: auto;
-		margin-right: auto;
-	}
+
 	body{
 		background-color: lightgreen;
 		font-style: italic;
 	}
-		h1{
+		.h1{
 			border: solid black;
 			text-align: center;
+			float: left;
 			margin: 50px;
 		}
-		h2{
+		.h2{
 			color: gray;
 			font-size: 20px;
 			text-align: center;
 		}
-		p{
+		.p{
 			font-size: 20px;
 		}
+		*{box-sizing: border-box ;}
+
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+
+		@media only screen and (max-width: 900px)
+	{
+	[CLASS*="COL-"]{
+		WIDTH: 100%;
+	}		
+	/* if your device is smaller than 400px, then these classes will be visibl to the browser */
+	.col-s-1 {width: 8.33%;}
+	.col-s-2 {width: 16.66%;}
+	.col-s-3 {width: 25%;}
+	.col-s-4 {width: 33.33%;}
+	.col-s-5 {width: 41.66%;}
+	.col-s-6 {width: 50%;}
+	.col-s-7 {width: 58.33%;}
+	.col-s-8 {width: 66.66%;}
+	.col-s-9 {width: 75%;}
+	.col-s-10 {width: 83.33%;}
+	.col-s-11 {width: 91.66%;}
+	.col-s-12 {width: 100%;}
+	}
 	</style>
 </head>
 <body>
-	<div class="container">
-		<h1>RESUME</h1>
-		<h2>NAME : LEEHYOSEOK</h2> <hr>
-		<h2>FROM : KOREA - POHANG</h2>
-		<img src="ph.jpg" height="300px" width="800px"><hr>
-		<h2>MAJOR : IT ENGINEERING</h2>
-		<img src="CE.jpg" height="300px" width="800px"><hr>
-		<h2>SCHOOL : DAEGU CATHOLIC UNIVERSITY</h2>
-		<img src="0000537818_001_20170104211616565.jpg" height="300px" width="800px"><hr>
-		<h2>SELF-INTRODUCTION</h2>
-		<p>Let me introduce myself, My name is 이효석 and My family member is father, grandmother, me and My older brother My hobby is computer game, video game and table tennis My table tennis level is little lack but I alaways try to be good Thank you for visiting.</p>
+	<div class="container" class="col-12 col-s-12">
+		<div class="h1 col-12 col-s-12">RESUME</div>
+		<div class="h2 col-12 col-s-12">NAME : LEEHYOSEOK</div> <hr>
+		<div class="h2 col-12 col-s-12">FROM : KOREA - POHANG</div>
+		<img src="ph.jpg" height="300px" width="800px" class="col-12 col-s-12"><hr>
+		<div class="h2 col-12 col-s-12">MAJOR : IT ENGINEERING</div>
+		<img src="CE.jpg" height="300px" width="800px" class="col-12 col-s-12"><hr>
+		<div class="h2 col-12 col-s-12">SCHOOL : DAEGU CATHOLIC UNIVERSITY</div>
+		<img src="0000537818_001_20170104211616565.jpg" height="300px" width="800px" class="col-12 col-s-12"><hr>
+		<div class="h2 col-12 col-s-12">SELF-INTRODUCTION</div>
+		<div class="p col-12 col-s-12">Let me introduce myself, My name is 이효석 and My family member is father, grandmother, me and My older brother My hobby is computer game, video game and table tennis My table tennis level is little lack but I alaways try to be good Thank you for visiting.</p>
 	</div>
 </body>
 </html>
